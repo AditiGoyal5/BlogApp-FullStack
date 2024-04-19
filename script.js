@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const bodyParser = require('body-parser');B9lhyzL1OnbrKqAF
+const bodyParser = require('body-parser');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
 // const multer  = require('multer')
@@ -13,7 +13,6 @@ const session = require('express-session')
 app.use(express.static('views/images'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
-B9lhyzL1OnbrKqAF
 
 
 app.use(session({
